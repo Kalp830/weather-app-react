@@ -18,8 +18,12 @@
   max-width: 100%;
   padding: 1.5rem;
   border: 0.25rem solid rgb(144, 216, 216);
+  border-radius: 1rem;
 }
 .getWeatherBtn {
   width: 10rem;
   margin: 1rem auto;
+}
+.weather-info p {
+  font-size: 1.5rem;
 }

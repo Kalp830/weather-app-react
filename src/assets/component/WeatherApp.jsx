@@ -9,6 +9,7 @@ const WeatherApp = () => {
   const handleCityChange = (event) => {
     setCity(event.target.value);
   };
+
   const fetchWeather = async () => {
     try {
       const response = await axios.get(
@@ -39,7 +40,9 @@ const WeatherApp = () => {
           {weather && (
             <>
               <div className="weather-info">
-                <h2>{weather.data.name}</h2>
+                <h1>{weather.data.name}</h1>
+                <h4>Temprature is {weather.data.main.temp}</h4>
+                <p>{weather.data.weather[0].description}</p>
               </div>
             </>
           )}
