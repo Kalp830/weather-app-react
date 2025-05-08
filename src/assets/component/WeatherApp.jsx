@@ -41,7 +41,7 @@ const WeatherApp = () => {
             <>
               <div className="weather-info">
                 <h1>{weather.data.name}</h1>
-                <h4>Temprature is {weather.data.main.temp}</h4>
+                <h4>Temprature is {weather.data.main.temp}c</h4>
                 <p>{weather.data.weather[0].description}</p>
               </div>
             </>
